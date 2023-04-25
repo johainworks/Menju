@@ -1,0 +1,14 @@
+{
+    "auth/email": "Email",
+    "auth/password": "Password",
+    "auth/success": "Menju: Success (Authenticating : Account)",
+    "auth/wrong-password": "Menju: Error (Invalid credentials).",
+    "auth/invalid-email": "Menju: Error (Invalid email).",
+    "auth/user-not-found": "Menju: Error (User not found).",
+    "auth/unexpected-error": "Menju: Unexpected error (%%).",
+
+    "page/home/title": "Home",
+    "page/home/tools": "Tools",
+    "page/home/games": "Games"
+    
+}
