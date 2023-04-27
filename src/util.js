@@ -10,6 +10,6 @@ export function getLang (lang) {
 }
 
 export function getString(string) {
-    if (string === undefined) string = "error: getString"
+    if (string === undefined) return
     if (!)
 }
