@@ -5,30 +5,29 @@ import {
     signInWithEmailAndPassword,
 } from "firebase/auth"
 
-import { getLang } from "../util.js"
+import { getString } from "../lang/language.js"
 
 export function authenticate(_callback) {
     console.clear()
     const auth = getAuth()
-    console.log(Intl.DateTimeFormat().resolvedOptions().locale)
 
     inquirer
         .prompt([
             {
                 type: "input",
                 name: "email",
-                message: getLang(Intl.DateTimeFormat().resolvedOptions().locale, "auth/email"),
+                message: getString("input/email"),
             },
             {
                 type: "password",
                 name: "password",
-                message: "Password",
+                message: getString("input/password"),
             },
         ])
         .then((answers) => {
             signInWithEmailAndPassword(auth, answers.email, answers.password)
                 .then((userCredential) => {
-                    console.log("Menju: Success (Authenticating : Account)")
+                    console.log(`Menju: ${getString("status/success")} (${getString("success/authentication")}.)`)
                     _callback(true)
                 })
                 .catch((error) => {
@@ -36,17 +35,13 @@ export function authenticate(_callback) {
                         
                     switch (error.code) {
                         case "auth/wrong-password":
-                            console.log("Menju: Error (Invalid credentials).")
-                            break
+                            console.log(`Menju: ${getString("status/error")} (${getString("error/wrong-password")}.)`)
                         case "auth/invalid-email":
-                            console.log("Menju: Error (Invalid email).")
-                            break
+                            console.log(`Menju: ${getString("status/error")} (${getString("error/invalid-email")}.)`)
                         case "auth/user-not-found":
-                            console.log("Menju: Error (User not found).")
-                            break
+                            console.log(`Menju: ${getString("status/error")} (${getString("error/user-not-found")}.)`)
                         default:
-                            console.log(`Menju: Unexpected error (${error.code}).`)
-                            break
+                            console.log(`Menju: ${getString("status/error")} (${getString("error/unexpected")}, ${error.code}.)`)
                     }
 
                     _callback(false)

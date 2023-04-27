@@ -1,0 +1,20 @@
+{
+    "input/email": "Correo",
+    "input/password": "Contraseña",
+
+    "status/success": "Éxito",
+    "status/error": "Fallar",
+
+    "success/authentication": "Autenticación",
+
+    "error/wrong-password": "Credenciales no válidas",
+    "error/invalid-email": "Email inválido",
+    "error/user-not-found": "Usuario no encontrado",
+    "error/unexpected": "Error inesperado",
+
+    "page/home/title": "Casa",
+    "page/home/tools": "Herramientas",
+    "page/home/games": "Juegos",
+
+    "text/exit": "Salida"
+}

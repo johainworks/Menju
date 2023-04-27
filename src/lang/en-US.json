@@ -1,9 +1,12 @@
 {
     "input/email": "Email",
     "input/password": "Password",
+    
     "status/success": "Success",
     "status/error": "Error",
-    "success/authentication": "authentication",
+
+    "success/authentication": "Authentication",
+
     "error/wrong-password": "Invalid credentials",
     "error/invalid-email": "Invalid email",
     "error/user-not-found": "User not found",
@@ -11,6 +14,8 @@
 
     "page/home/title": "Home",
     "page/home/tools": "Tools",
-    "page/home/games": "Games"
+    "page/home/games": "Games",
+    
+    "text/exit": "Exit"
     
 }

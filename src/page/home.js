@@ -1,4 +1,6 @@
-import inquirer from "inquirer";
+import inquirer from "inquirer"
+
+import { getString } from "../lang/language.js"
 
 export function showHome() {
     inquirer
@@ -6,22 +8,22 @@ export function showHome() {
             {
                 type: 'list',
                 name: 'selected',
-                message: 'Home',
+                message: getString("page/home/title"),
                 choices: [
-                    "Tools",
-                    "Games",
-                    "Exit"
+                    getString("page/home/tools"),
+                    getString("page/home/games"),
+                    getString("text/exit")
                 ]
             }
         ])
         .then((answers) => {
             switch (answers.selected) {
-                case "Tools":
+                case getString("page/home/tools"):
+                    
                     break
-                case "Games":
+                case getString("page/home/games"):
                     break
                 default:
-                    //exit
                     break
             }
         })
