@@ -1,9 +1,5 @@
 import inquirer from "inquirer"
-import {
-    getAuth,
-    createUserWithEmailAndPassword,
-    signInWithEmailAndPassword,
-} from "firebase/auth"
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 
 import { getString } from "../lang/language.js"
 
