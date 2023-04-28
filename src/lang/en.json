@@ -1,0 +1,25 @@
+{
+    "input/email": "Email",
+    "input/password": "Password",
+    
+    "status/success": "Success",
+    "status/error": "Error",
+
+    "success/authentication": "Authentication",
+
+    "error/wrong-password": "Invalid credentials",
+    "error/invalid-email": "Invalid email",
+    "error/user-not-found": "User not found",
+    "error/unexpected": "Unexpected error",
+
+    "page/home/title": "Home",
+    "page/home/tools": "Tools",
+    "page/home/games": "Games",
+
+    "page/games/title": "Games",
+    "page/games/add": "Add",
+    "page/games/remove": "Remove",
+    "page/games/list": "List",
+    
+    "text/exit": "Exit"
+}
