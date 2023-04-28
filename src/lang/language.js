@@ -7,7 +7,11 @@ const languages = fs.readdirSync("./src/lang").filter(file => {
 
 export function getString(string, lang) {
     if (lang == undefined) lang = Intl.DateTimeFormat().resolvedOptions().locale
-    if (!languages.includes(`${lang}.json`)) lang = "en-US"
+
+    if (lang.includes("en")) lang = "en"
+    if (lang.includes("es")) lang = "es"
+
+    if (!languages.includes(`${lang}.json`)) lang = "en"
 
     const obj = JSON.parse(fs.readFileSync(`./src/lang/${lang}.json`))
 
@@ -15,5 +19,3 @@ export function getString(string, lang) {
 
     return obj[string]
 }
-
-getString("error/wrong-password", "en-US")

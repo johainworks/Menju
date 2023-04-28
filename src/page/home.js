@@ -2,6 +2,8 @@ import inquirer from "inquirer"
 
 import { getString } from "../lang/language.js"
 
+import { showGames } from './games.js'
+
 export function showHome() {
     inquirer
         .prompt([
@@ -22,6 +24,7 @@ export function showHome() {
                     
                     break
                 case getString("page/home/games"):
+                    showGames()
                     break
                 default:
                     break
@@ -33,6 +36,7 @@ export function showHome() {
             switch (error.code) {
                 default:
                     console.log("default error case")
+                    console.log(error.code)
                     break
             }
         })
