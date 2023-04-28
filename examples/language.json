@@ -1,0 +1,25 @@
+{
+    "input/email": "Email in your language",
+    "input/password": "Password in your language",
+    
+    "status/success": "Success in your language",
+    "status/error": "Error in your language",
+
+    "success/authentication": "Authentication in your language",
+
+    "error/wrong-password": "Invalid credentials in your language",
+    "error/invalid-email": "Invalid email in your language",
+    "error/user-not-found": "User not found in your language",
+    "error/unexpected": "Unexpected error in your language",
+
+    "page/home/title": "Home in your language",
+    "page/home/tools": "Tools in your language",
+    "page/home/games": "Games in your language",
+
+    "page/games/title": "Games in your language",
+    "page/games/add": "Add in your language",
+    "page/games/remove": "Remove in your language",
+    "page/games/list": "List in your language",
+    
+    "text/exit": "Exit in your language"
+}
