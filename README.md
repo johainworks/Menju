@@ -41,7 +41,7 @@ Please keep in mind Menju's current file structure when making contributions. If
 
 ### Language Translation
 
-To translate Menju please follow our language [Template](github.com/johainworks/Menju/blob/master/examples/lang.json).
+To translate Menju please follow our language [Template](https://github.com/johainworks/Menju/blob/master/examples/language.json).
 
 ### Dependencies
 
