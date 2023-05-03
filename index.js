@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app"
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 import dotenv from "dotenv"
+import fs from 'fs'
 
 dotenv.config()
 
