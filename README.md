@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/johainworks/Menju">
-    <img src="images/menju.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/blueprintgrp/nitrolang">
+    <img src="https://i.ibb.co/k0tqP1w/Nitrolang.png" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Menju</h1>
@@ -10,9 +10,9 @@
     A reliable desktop application.
     <br/>
     <br/>
-    <a href="https://github.com/johainworks/Menju/issues">Report Bug</a>
+    <a href="https://github.com/blueprintgrp/nitrolang/issues">Report Bug</a>
     .
-    <a href="https://github.com/johainworks/Menju/issues">Request Feature</a>
+    <a href="https://github.com/blueprintgrp/nitrolang/issues">Request Feature</a>
   </p>
 </p>
 
